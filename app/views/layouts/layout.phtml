@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../web/stylesheets/style.css">
+  <title>Todo task</title>
 </head>
-<body>
-	<?php echo $this->content(); ?>
+
+<?php include(ROOT_PATH . '/app/views/layouts/header.phtml');?>
+
+<body class="bg-red-50">
+  <?php echo $this->content(); ?>
 </body>
+
+<?php include(ROOT_PATH . '/app/views/layouts/footer.phtml');?>
+
 </html>

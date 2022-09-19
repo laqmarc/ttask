@@ -1,0 +1,46 @@
+<h2 class="text-center text-3xl my-8">Add a new task</h2>
+<div class="mx-auto px-10 w-96 border border-black pb-8">
+    <form method="post">
+        <div class="w-full text-center">
+            <p class="py-4">
+                Name of your task
+            </p>
+            <input type="text" name="task" placeholder="task name"
+                class="text-sm border-2 text-slate-500 border-gray-900 p-2.5 w-48" required />
+        </div>
+        <div class="w-full text-center">
+            <p class="py-4">
+                User Name
+            </p>
+            <input type="text" name="user" placeholder="user name"
+                class="text-sm border-2 text-slate-500 border-gray-900 p-2.5 w-48" required />
+        </div>
+        <div class="w-full text-center">
+            <p class="py-4">
+                Select the state
+            </p>
+            <select name="state" class="text-sm border-2 text-slate-500 border-gray-900 p-2.5 w-48" required>
+                <option value="pending">pending</option>
+                <option value="doing">doing</option>
+                <option value="finish">finish</option>
+            </select>
+        </div>
+        <div class="w-full text-center">
+            <p class="py-4">
+                Select the start date
+            </p>
+            <input type="datetime-local" name="sdate"
+                class="text-sm border-2 text-slate-500 border-gray-900 p-2.5 w-48">
+        </div>
+        <div class="w-full text-center">
+            <p class="py-4">
+                Select the finish date
+            </p>
+            <input type="datetime-local" name="fdate"
+                class="text-sm border-2 text-slate-500 border-gray-900 p-2.5 w-48">
+        </div>
+        <div class="w-full text-center pt-8">
+            <input type="submit" value="CREATE" class="bg-black custom-btn btn-3 text-center mr-2 hover:bg-black">
+        </div>
+    </form>
+</div>
