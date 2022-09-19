@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "task": "Creating the first task",
+        "user": "Marc",
+        "state": "finish",
+        "sdate": "2022-09-17T18:40",
+        "fdate": "2022-09-18T18:40"
+    },
+    {
+        "id": 2,
+        "task": "Updating the css",
+        "user": "Marc",
+        "state": "doing",
+        "sdate": "2022-09-19T18:39",
+        "fdate": "2022-09-20T00:00"
+    },
+    {
+        "id": 3,
+        "task": "Cleaning the code",
+        "user": "Marc",
+        "state": "pending",
+        "sdate": "2022-09-23T18:32",
+        "fdate": "2022-09-23T00:01"
+    },
+    {
+        "id": 4,
+        "task": "Check if all is correct",
+        "user": "Rub\u00e9n",
+        "state": "pending",
+        "sdate": "2022-09-24T18:39",
+        "fdate": "2022-09-25T18:39"
+    }
+]
