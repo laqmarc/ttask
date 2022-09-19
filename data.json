@@ -3,7 +3,7 @@
         "id": 1,
         "task": "Creating the first task",
         "user": "Marc",
-        "state": "finish",
+        "state": "pending",
         "sdate": "2022-09-17T18:40",
         "fdate": "2022-09-18T18:40"
     },
