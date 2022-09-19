@@ -1,0 +1,39 @@
+<?php $tasks = ($this->content);?>
+
+<div class="p-4">
+<p class="pb-4">Current time: <?php echo date("Y-m-d H:i:s"); ?></p>
+    <table class="w-full text-left">
+        <thead class="bg-purple-100	">
+            <tr>
+                <th class="p-4 border border-black">Task</th>
+                <th class="p-4 border border-black">User</th>
+                <th class="p-4 border border-black">State</th>
+                <th class="p-4 border border-black">Start Date</th>
+                <th class="p-4 border border-black">Finish Date</th>
+                <th class="p-4 border border-black">Show</th>
+                <th class="p-4 border border-black">Edit</th>
+                <th class="p-4 border border-black">Delete</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+            <?php foreach ($tasks as $task): ?>
+            <tr class="bg-white-50">
+                <td class="p-4 border border-black bg-white-50"><?php echo $task["task"] ?></td>
+                <td class="p-4 border border-black bg-white-50"><?php echo $task["user"] ?></td>
+                <td class="p-4 border border-black bg-white-50"><?php echo $task["state"] ?></td>
+                <td class="p-4 border border-black bg-white-50"><?php echo $task["sdate"] ?></td>
+                <td class="p-4 border border-black bg-white-50"><?php echo $task["fdate"] ?></td>
+                <td class="p-4 border border-black bg-yellow-100">
+                    <a href="view?id=<?php echo $task["id"] ?>">SHOW</a>
+                </td>
+                <td class="p-4 border border-black bg-green-100">
+                    <a href="update?id=<?php echo $task["id"] ?>">UPDATE</a>
+                </td>
+                <td class="p-4 border border-black bg-red-100">
+                    <a href="remove?id=<?php echo $task["id"] ?>">DELETE</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
